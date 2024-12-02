@@ -1,0 +1,35 @@
+
+[env]
+TERM = "xterm-256color"
+
+[font]
+size = 12.0
+
+[font.bold]
+# family = "Monaspace Krypton"
+family = "JetbrainsMonoNerd Font Mono"
+style = "Bold"
+
+[font.bold_italic]
+# family = "Monaspace Krypton"
+family = "JetbrainsMonoNerd Font Mono"
+style = "Bold Italic"
+
+[font.italic]
+family = "JetbrainsMonoNerd Font Mono"
+# family = "Monaspace Krypton"
+style = "Italic"
+
+[font.normal]
+style = "Regular"
+# family = "Monaspace Krypton"
+family = "JetbrainsMonoNerd Font Mono"
+
+[window]
+padding = { x = 4 }
+dimensions = { columns = 68, lines = 24 }
+# opacity = 0.95
+blur = true
+
+[general]
+import = ["~/.config/alacritty/themes/rose-pine-dawn.toml"]
