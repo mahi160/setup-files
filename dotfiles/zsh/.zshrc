@@ -39,8 +39,8 @@ setopt histreduceblanks
 # pnpm
 export PNPM_HOME="/home/mahi/.local/share/pnpm"
 case ":$PATH:" in
-  *":$PNPM_HOME:"*) ;;
-  *) export PATH="$PNPM_HOME:$PATH" ;;
+*":$PNPM_HOME:"*) ;;
+*) export PATH="$PNPM_HOME:$PATH" ;;
 esac
 # pnpm end
 export PATH=$HOME/.local/bin:$PATH
@@ -49,41 +49,13 @@ export PATH=$HOME/.local/bin:$PATH
 FNM_PATH="/home/mahi/.local/share/fnm"
 if [ -d "$FNM_PATH" ]; then
   export PATH="/home/mahi/.local/share/fnm:$PATH"
-  eval "`fnm env`"
+  eval "$(fnm env)"
 fi
 # android studio
 export ANDROID_HOME=$HOME/Android/sdk
 export PATH=$PATH:$ANDROID_HOME/emulator
 export PATH=$PATH:$ANDROID_HOME/platform-tools
 
-# fnm
-FNM_PATH="/home/mahi/.local/share/fnm"
-if [ -d "$FNM_PATH" ]; then
-  export PATH="/home/mahi/.local/share/fnm:$PATH"
-  eval "`fnm env`"
-fi
-
-# fnm
-FNM_PATH="/home/mahi/.local/share/fnm"
-if [ -d "$FNM_PATH" ]; then
-  export PATH="/home/mahi/.local/share/fnm:$PATH"
-  eval "`fnm env`"
-fi
-
-. "/home/mahi/.deno/env"
-# fnm
-FNM_PATH="/home/mahi/.local/share/fnm"
-if [ -d "$FNM_PATH" ]; then
-  export PATH="/home/mahi/.local/share/fnm:$PATH"
-  eval "`fnm env`"
-fi
-
-# fnm
-FNM_PATH="/home/mahi/.local/share/fnm"
-if [ -d "$FNM_PATH" ]; then
-  export PATH="/home/mahi/.local/share/fnm:$PATH"
-  eval "`fnm env`"
-fi
 # Initialize zsh completions (added by deno install script)
 autoload -Uz compinit
 compinit
