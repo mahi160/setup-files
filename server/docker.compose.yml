@@ -1,0 +1,170 @@
+version: "3.5"
+services:
+  jellyfin:
+    image: jellyfin/jellyfin:latest
+    container_name: jellyfin
+    environment:
+      - PUID=1000
+      - PGID=1000
+      - TZ=Asia/Dhaka
+    ports:
+      - 8096:8096
+    volumes:
+      - ${config}/JJellyfin/config:/config
+      - ${config}/JJellyfin/cache:/cache
+      - ${movies}:/movies
+      - ${series}:/series
+      - ${books}:/books
+      - ${music}:/music
+      - ${new}:/new
+      - ${pictures}:/pictures
+    group_add:
+      - "989"
+    devices:
+      - /dev/dri/renderD128:/dev/dri/renderD128
+    restart: "unless-stopped"
+
+  transmission:
+    image: lscr.io/linuxserver/transmission:latest
+    container_name: transmission
+    environment:
+      - PUID=1000
+      - PGID=1000
+      - TZ=Asia/Dhaka
+      - USER=admin
+      - PASS=${PASS}
+    volumes:
+      - ${config}/Transmission/config:/config
+      - ${movies}:/movies
+      - ${series}:/series
+      - ${books}:/books
+      - ${music}:/music
+      - ${new}:/new
+      - ${downloads}:/downloads
+    ports:
+      - 9091:9091
+      - 51413:51413
+      - 51413:51413/udp
+    restart: unless-stopped
+
+  jellyseerr:
+    image: fallenbagel/jellyseerr:latest
+    container_name: jellyseerr
+    environment:
+      - LOG_LEVEL=debug
+      - TZ=Asia/Dhaka
+    ports:
+      - 5055:5055
+    volumes:
+      - ${config}/Jellyseer:/app/config
+    restart: unless-stopped
+
+  bazarr:
+    image: lscr.io/linuxserver/bazarr:latest
+    container_name: bazarr
+    environment:
+      - PUID=1000
+      - PGID=1000
+      - TZ=Asia/Dhaka
+    volumes:
+      - ${config}/Bazarr/config:/config
+      - ${movies}:/movies #optional
+      - ${series}:/tv #optional
+      - ${new}:/new
+    ports:
+      - 6767:6767
+    restart: unless-stopped
+
+  calibre-web:
+    image: lscr.io/linuxserver/calibre-web:latest
+    container_name: calibre-web
+    environment:
+      - PUID=1000
+      - PGID=1000
+      - TZ=Asia/Dhaka
+      - DOCKER_MODS=linuxserver/mods:universal-calibre #optional
+      - OAUTHLIB_RELAX_TOKEN_SCOPE=1 #optional
+    volumes:
+      - ${config}/Calibre-Web/config:/config
+      - ${books}:/books
+    ports:
+      - 8083:8083
+    restart: unless-stopped
+
+  calibre:
+    image: lscr.io/linuxserver/calibre:latest
+    container_name: calibre
+    security_opt:
+      - seccomp:unconfined #optional
+    environment:
+      - PUID=1000
+      - PGID=1000
+      - TZ=Asia/Dhaka
+    volumes:
+      - ${config}/Calibre/config:/config
+      - ${books}:/books
+    ports:
+      - 8082:8080
+      - 8181:8181
+      - 8081:8081
+    restart: unless-stopped
+
+  prowlarr:
+    image: lscr.io/linuxserver/prowlarr:latest
+    container_name: prowlarr
+    environment:
+      - PUID=1000
+      - PGID=1000
+      - TZ=Asia/Dhaka
+    volumes:
+      - ${config}/Prowlarr/config:/config
+    ports:
+      - 9696:9696
+    restart: unless-stopped
+
+  radarr:
+    image: lscr.io/linuxserver/radarr:latest
+    container_name: radarr
+    environment:
+      - PUID=1000
+      - PGID=1000
+      - TZ=Asia/Dhaka
+    volumes:
+      - ${config}/Radarr/config:/config
+      - ${movies}:/movies
+      - ${new}:/new
+      - ${downloads}:/downloads
+    ports:
+      - 7878:7878
+    restart: unless-stopped
+
+  sonarr:
+    image: lscr.io/linuxserver/sonarr:latest
+    container_name: sonarr
+    environment:
+      - PUID=1000
+      - PGID=1000
+      - TZ=Asia/Dhaka
+    volumes:
+      - ${config}/Sonarr/config:/config
+      - ${series}:/tv #optional
+      - ${new}:/new
+      - ${downloads}:/downloads
+    ports:
+      - 8989:8989
+    restart: unless-stopped
+
+  # lidarr:
+  #   image: lscr.io/linuxserver/lidarr:latest
+  #   container_name: lidarr
+  #   environment:
+  #     - PUID=1000
+  #     - PGID=1000
+  #     - TZ=Asia/Dhaka
+  #   volumes:
+  #     - ${config}/Lidarr/config:/config
+  #     - ${music}:/music #optional
+  #     - ${downloads}:/downloads #optional
+  #   ports:
+  #     - 8686:8686
+  #   restart: unless-stopped
