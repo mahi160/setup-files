@@ -31,8 +31,8 @@ setup_terminal() {
     git clone https://github.com/zsh-users/zsh-syntax-highlighting.git ${ZSH_CUSTOM:-~/.oh-my-zsh/custom}/plugins/zsh-syntax-highlighting
     git clone https://github.com/zsh-users/zsh-completions ${ZSH_CUSTOM:-${ZSH:-~/.oh-my-zsh}/custom}/plugins/zsh-completions
     curl -sS https://starship.rs/install.sh | sh
-    rm ~/.zshrc ~/.config/alacritty ~/.config/nvim ~/.config/starship.toml ~/.config/tmux
-    stow --dir=dotfiles -t ~/ zsh starship tmux alacritty nvim
+    rm ~/.zshrc ~/.config/alacritty ~/.config/nvim ~/.config/starship.toml ~/.config/tmux ~/.config/ghostty
+    stow --dir=dotfiles -t ~/ zsh starship tmux alacritty nvim ghostty
     notify "Terminal Setup"
 }
 
