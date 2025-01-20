@@ -14,6 +14,7 @@ alias ls="exa"
 alias ll="exa -la"
 alias ac="nvim ~/.config/alacritty/alacritty.toml"
 alias setup="nvim ~/Documents/Coding/Projects/setup-files/"
+alias note="~/Documents/Coding/Projects/setup-files/quick-note.sh"
 # starship
 eval "$(starship init zsh)"
 # fnm

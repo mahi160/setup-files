@@ -195,12 +195,12 @@ disabled = false
 
 [localip]
 ssh_only = false
-format = '[@$localipv4](bold #4b6584) '
+format = '[@$localipv4](bold #bdc3c7) '
 disabled = false
 
 [username]
-style_user = '#3867d6 bold'
-style_root = '#f7b731 bold'
+style_user = '#2980b9 bold'
+style_root = '#f1c40f bold'
 format = '[$user]($style)'
 disabled = false
 show_always = true
