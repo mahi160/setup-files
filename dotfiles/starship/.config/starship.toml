@@ -195,7 +195,7 @@ disabled = false
 
 [localip]
 ssh_only = false
-format = '[@$localipv4](bold #bdc3c7) '
+format = '[@$localipv4](bold #34495e) '
 disabled = false
 
 [username]
