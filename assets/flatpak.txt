@@ -1,17 +1,13 @@
 io.github.vikdevelop.SaveDesktop
 org.videolan.VLC
-com.github.iwalton3.jellyfin-media-player
 cafe.avery.Delfin
 com.rtosta.zapzap
 com.rafaelmardojai.Blanket
 com.mattjakeman.ExtensionManager
-io.bassi.Amberol
 com.slack.Slack
-org.telegram.desktop
 com.obsproject.Studio
 md.obsidian.Obsidian
 com.github.tchx84.Flatseal
-org.kde.audiotube
 org.gtk.Gtk3theme.adw-gtk3 
 org.gtk.Gtk3theme.adw-gtk3-dark
 org.qbittorrent.qBittorrent

@@ -17,11 +17,8 @@ youtube-music-bin
 dconf-editor
 blueman
 zerotier-one
-zapzap
-slack-desktop
-obsidian
 neovim
 flameshot
 openbangla-keyboard
+forticlient-vpn
 brave-bin
-extension-manager

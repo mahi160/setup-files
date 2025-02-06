@@ -8,6 +8,6 @@ return {
   { import = "astrocommunity.pack.lua" },
   { "github/copilot.vim", event = "VeryLazy", version = "*" },
   { import = "astrocommunity.colorscheme.catppuccin" },
-  { import = "astrocommunity.colorscheme.rose-pine" },
+  { "supermaven-inc/supermaven-nvim", config = function() require("supermaven-nvim").setup {} end },
   -- import/override with your plugins folder
 }

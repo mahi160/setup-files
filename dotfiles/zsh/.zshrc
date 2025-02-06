@@ -48,9 +48,9 @@ esac
 export PATH=$HOME/.local/bin:$PATH
 
 # fnm
-FNM_PATH="/home/mahi/.local/share/fnm"
+FNM_PATH="/home/mahi/.fnm"
 if [ -d "$FNM_PATH" ]; then
-  export PATH="/home/mahi/.local/share/fnm:$PATH"
+  export PATH="/home/mahi/.fnm:$PATH"
   eval "$(fnm env)"
 fi
 # android studio
@@ -61,3 +61,10 @@ export PATH=$PATH:$ANDROID_HOME/platform-tools
 # Initialize zsh completions (added by deno install script)
 autoload -Uz compinit
 compinit
+
+# fnm
+FNM_PATH="/home/mahi/.local/share/fnm"
+if [ -d "$FNM_PATH" ]; then
+  export PATH="/home/mahi/.local/share/fnm:$PATH"
+  eval "`fnm env`"
+fi

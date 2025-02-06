@@ -47,3 +47,12 @@ swapon /swap/swapfile
 ```bash
 /swap/swapfile none swap defaults 0 0
 ```
+### Create SSH ISO with arch linux
+```bash
+sudo pacman -S archiso
+cd ~/Documents && mkdir archlive && cd archlive
+cp -r /usr/share/archiso/configs/releng/ .
+mkdir relang/archiso/airootfs/root/.ssh
+cp ~/.ssh/id_rsa.pub releng/airootfs/root/.ssh/authorized_keys
+sudo mkarchiso -v -o ./out ./releng
+```

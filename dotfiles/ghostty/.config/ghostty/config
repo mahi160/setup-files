@@ -1,5 +1,3 @@
-theme = "rose-pine-dawn"
-window-padding-x = 4
-window-padding-y = 4
+theme = "catppuccin-mocha"
 window-height = 20
 window-width = 72

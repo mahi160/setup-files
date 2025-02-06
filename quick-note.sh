@@ -106,7 +106,7 @@ ALL_TAGS="#$CATEGORY"
 if [ ! -z "$TAGS" ]; then
     # Convert comma-separated tags to hashtags
     FORMATTED_TAGS=$(echo $TAGS | sed 's/,/ #/g')
-    ALL_TAGS="$ALL_TAGS #$FORMATTED_TAGS"
+    ALL_TAGS=" $ALL_TAGS #$FORMATTED_TAGS"
 fi
 
 # Add date header if it doesn't exist
@@ -117,7 +117,7 @@ if ! grep -q "## $READABLE_DATE" "$NOTE_FILE"; then
 fi
 
 # Add the note with timestamp and tags
-echo "- [ ] **$TIMESTAMP**: $NOTE_CONTENT ($ALL_TAGS)" >> "$NOTE_FILE"
+echo "- [ ] **$TIMESTAMP**: $NOTE_CONTENT ( $ALL_TAGS )" >> "$NOTE_FILE"
 
 # Confirmation message
 echo -e "${GREEN}✓ Note added to Quick Notes${NC}"
