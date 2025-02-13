@@ -56,3 +56,7 @@ mkdir relang/archiso/airootfs/root/.ssh
 cp ~/.ssh/id_rsa.pub releng/airootfs/root/.ssh/authorized_keys
 sudo mkarchiso -v -o ./out ./releng
 ```
+### Fix zoom flatpak
+```
+flatpak override --env=ZYPAK_ZYGOTE_STRATEGY_SPAWN=0 us.zoom.Zoom
+```

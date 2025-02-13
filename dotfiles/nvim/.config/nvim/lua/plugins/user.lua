@@ -80,4 +80,8 @@ return {
       )
     end,
   },
+  {
+    "luisiacc/gruvbox-baby",
+    priority = 999, -- Load after other colorschemes to allow overriding
+  },
 }
