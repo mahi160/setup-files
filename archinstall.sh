@@ -64,7 +64,7 @@ setup_conf() {
 }
 
 setup_native() {
-    #curl -fsSL https://fnm.vercel.app/install | bash
+    curl -fsSL https://fnm.vercel.app/install | bash
     #curl --proto '=https' --tlsv1.2 -sSf https://sh.rustup.rs | sh
     #curl -fsSL https://deno.land/install.sh | sh
     if [ -f ./assets/yay.txt ]; then
@@ -83,16 +83,16 @@ setup_flatpak() {
 }
 
 setup_theme() {
-    yay -S --noconfirm ttf-jetbrains-mono-nerd noto-fonts noto-fonts-cjk noto-fonts-extra noto-fonts-emoji adw-gtk-theme papirus-icon-theme ttf-indic-otf
+    yay -S --noconfirm ttf-jetbrains-mono-nerd noto-fonts noto-fonts-extra noto-fonts-emoji adw-gtk-theme kora-icon-theme ttf-indic-otf
     curl -s https://wallpapers.manishk.dev/install.sh | bash -s Lakeside
 
 }
 
 setup_gnome() {
     # Set font
-    # gsettings set org.gnome.desktop.interface document-font-name 'Noto Sans Regular 11'
-    # gsettings set org.gnome.desktop.interface font-name 'Noto Sans Regular 11'
-    # gsettings set org.gnome.desktop.interface monospace-font-name 'JetbrainsMono Nerd Font Regular 11'
+    gsettings set org.gnome.desktop.interface document-font-name 'Noto Sans Regular 11'
+    gsettings set org.gnome.desktop.interface font-name 'Noto Sans Regular 11'
+    gsettings set org.gnome.desktop.interface monospace-font-name 'JetbrainsMono Nerd Font Regular 11'
     gsettings set org.gnome.desktop.interface show-battery-percentage true
     gsettings set org.gnome.desktop.sound theme-name 'Click'
     gsettings set org.gnome.shell.app-switcher current-workspace-only true

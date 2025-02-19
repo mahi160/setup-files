@@ -2,7 +2,6 @@
 libreoffice-fresh 
 fastfetch 
 onefetch 
-firefox-developer-edition 
 exa
 fzf 
 htop 
@@ -16,9 +15,26 @@ gparted
 youtube-music-bin 
 dconf-editor
 blueman
-zerotier-one
+bluez-tools
+bluez-utils
 neovim
+tailscale
 flameshot
 openbangla-keyboard
 forticlient-vpn
 brave-bin
+zen-browser-bin
+ghostty
+gdm-settings
+gnome-shell-pomodoro
+
+# Flatpak
+slack-desktop
+zoom
+zapzap
+obsidian
+obs-studio
+vlc
+gimp
+fragments
+delfin

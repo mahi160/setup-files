@@ -1,3 +1,7 @@
 theme = "rose-pine-dawn"
 window-height = 24
 window-width = 72
+window-padding-x = 4
+window-padding-y = 0
+background-blur = true
+background-opacity = 0.97
