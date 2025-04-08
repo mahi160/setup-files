@@ -1,35 +1,131 @@
+# Import theme files first (MUST be at the top level)
+[general]
+  import = ["~/.config/alacritty/themes/gruvbox_material.toml"]
 
 [env]
+# TERM variable sets the terminal type emulation
 TERM = "xterm-256color"
 
+[window]
+# Window dimensions (optional, uncomment and adjust if needed)
+# dimensions:
+#   columns = 80
+#   lines = 24
+
+
+# Window decoration (title bar, borders)
+# 'full', 'none', or 'transparent' (transparent requires compositor support)
+decorations = "none"
+
+# Startup mode ('Windowed', 'Maximized', 'Fullscreen')
+startup_mode = "Maximized"
+
+# Background opacity (0.0 transparent to 1.0 opaque)
+opacity = 0.95
+
+# Background blur (requires compositor support, like KWin or specific Wayland compositors)
+blur = true
+
+# Dynamic title updates (shows current running command/directory, may require shell config)
+# dynamic_title = true # Uncomment if desired, even with decorations = "none", some WMs can use it
+
+[scrolling]
+# Number of lines to keep in scrollback history
+history = 10000
+# Number of lines scrolled by mouse wheel
+# multiplier = 3
+
 [font]
+# Font size in points
 size = 12.0
 
+# Normal font style
+[font.normal]
+family = "JetBrainsMono Nerd Font" # Note: Verify this exact family name using `fc-list | grep JetBrains`
+# family = "Monaspace Krypton" # Keep your alternative commented out
+style = "Regular"
+
+# Bold font style
 [font.bold]
+family = "JetBrainsMono Nerd Font" # Note: Verify this exact family name
 # family = "Monaspace Krypton"
-family = "JetbrainsMonoNerd Font Mono"
 style = "Bold"
 
-[font.bold_italic]
-# family = "Monaspace Krypton"
-family = "JetbrainsMonoNerd Font Mono"
-style = "Bold Italic"
-
+# Italic font style
 [font.italic]
-family = "JetbrainsMonoNerd Font Mono"
+family = "JetBrainsMono Nerd Font" # Note: Verify this exact family name
 # family = "Monaspace Krypton"
 style = "Italic"
 
-[font.normal]
-style = "Regular"
+# Bold Italic font style
+[font.bold_italic]
+family = "JetBrainsMono Nerd Font" # Note: Verify this exact family name
 # family = "Monaspace Krypton"
-family = "JetbrainsMonoNerd Font Mono"
+style = "Bold Italic"
 
-[window]
-padding = { x = 4 }
-dimensions = { columns = 68, lines = 24 }
-# opacity = 0.95
-blur = true
+# Font features (like ligatures)
+# [font.features]
+# Example: Enable common programming ligatures if your font supports them
+# Add more specific features as needed based on font documentation
+# To enable specific ligature sets for JetBrains Mono, you might list them if desired,
+# but often enabling all standard ones works well. Check font documentation if needed.
+# E.g., calt = true, liga = true (these are often default OpenType features)
+# ligatures = true
 
-[general]
-import = ["~/.config/alacritty/themes/rose-pine-dawn.toml"]
+# Fine-tune font rendering (optional)
+# [font.offset]
+# x = 0
+# y = 0
+# [font.glyph_offset]
+# x = 0
+# y = 0
+
+[colors]
+# Colors are imported from the theme file specified in `import` above.
+# You can override specific colors here if needed.
+# Example:
+# [colors.primary]
+# background = '0x191724'
+# foreground = '0xe0def4'
+
+[cursor]
+# Cursor style: 'Block', 'Underline', 'Beam'
+style = { shape = "Block", blinking = "On" }
+# Vi mode cursor style (optional)
+# vi_mode_style = { shape = "Block", blinking = "On" }
+
+# Thickness of the cursor (use value from 0.0 to 1.0)
+# thickness = 0.15 # Uncomment to make the block cursor thinner or thicker
+
+[selection]
+# Automatically copy selected text to the system clipboard
+save_to_clipboard = true
+
+# Characters that are considered part of a word for selection purposes
+# semantic_escape_chars = ",│`|:\"' ()[]{}<>" # Default value
+
+[mouse]
+# Hide cursor when typing
+hide_when_typing = true
+
+# Key Bindings (Examples)
+[keyboard]
+bindings = [
+  # Example: Increase font size with Ctrl + + (or Ctrl + =)
+  { key = "Equals",     mods = "Control",           action = "IncreaseFontSize" },
+  # Example: Decrease font size with Ctrl + -
+  { key = "Minus",      mods = "Control",           action = "DecreaseFontSize" },
+  # Example: Reset font size with Ctrl + 0
+  { key = "Key0",       mods = "Control",           action = "ResetFontSize"    },
+  # Example: Spawn new Alacritty instance in the same directory with Ctrl+Shift+Enter
+  # { key = "Return",   mods = "Control|Shift",    action = "SpawnNewInstance" },
+  # Example: Copy text with Ctrl+Shift+C (useful if you disable default bindings)
+  # { key = "C",        mods = "Control|Shift",    action = "Copy"             },
+  # Example: Paste text with Ctrl+Shift+V
+  # { key = "V",        mods = "Control|Shift",    action = "Paste"            },
+]
+
+# Shell configuration (optional, for specific integrations)
+# [shell]
+# program = "/bin/bash" # Or your preferred shell like /bin/zsh
+# args = ["-l"]

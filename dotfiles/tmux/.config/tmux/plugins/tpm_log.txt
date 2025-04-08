@@ -1,0 +1,17 @@
+[2025-04-08 09:56:05.842]	List of discovered tpm plugins: tmux-plugins/tmux-cpu
+[2025-04-08 09:56:05.862]	Invoking /home/mahi/.config/tmux/plugins/tpm/bin/install_plugins
+[2025-04-08 09:56:05.935]	Installing "tmux-cpu"
+[2025-04-08 09:56:07.332]	  "tmux-cpu" download success
+[2025-04-08 09:56:07.351]	Done.
+
+[2025-04-08 10:44:29.253]	List of discovered tpm plugins: tmux-plugins/tmux-cpu
+[2025-04-08 10:44:29.276]	Invoking /home/mahi/.config/tmux/plugins/tpm/bin/install_plugins
+[2025-04-08 10:44:29.359]	Already installed "tmux-cpu"
+[2025-04-08 10:44:29.382]	Invoking /home/mahi/.config/tmux/plugins/tpm/bin/update_plugins all
+[2025-04-08 10:44:29.473]	Updating all plugins!
+[2025-04-08 10:44:29.509]	
+[2025-04-08 10:44:30.329]	  "tmux-cpu" update success
+[2025-04-08 10:44:30.349]	    | Already up to date.
+[2025-04-08 10:44:30.368]	Invoking /home/mahi/.config/tmux/plugins/tpm/bin/clean_plugins all
+[2025-04-08 10:44:30.439]	Done.
+

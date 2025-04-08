@@ -12,10 +12,12 @@ alias zc="nvim ~/.zshrc"
 alias zs="source ~/.zshrc"
 alias ls="exa"
 alias ll="exa -la"
-alias ac="nvim ~/.config/alacritty/alacritty.toml"
+# alias ac="nvim ~/.config/alacritty/alacritty.toml"
 alias setup="nvim ~/Documents/Coding/Projects/setup-files/"
 alias note="~/Documents/Coding/Projects/setup-files/quick-note.sh"
-alias cc="~/Documents/Coding/Workspaces/workspace.sh"
+alias code="code-insiders"
+alias wick="~/Documents/Coding/Projects/setup-files/tmux-wick.sh"
+alias tm="tmux attach -t"
 # starship
 eval "$(starship init zsh)"
 # fnm
@@ -61,6 +63,13 @@ export PATH=$PATH:$ANDROID_HOME/platform-tools
 # Initialize zsh completions (added by deno install script)
 autoload -Uz compinit
 compinit
+
+# fnm
+FNM_PATH="/home/mahi/.local/share/fnm"
+if [ -d "$FNM_PATH" ]; then
+  export PATH="/home/mahi/.local/share/fnm:$PATH"
+  eval "`fnm env`"
+fi
 
 # fnm
 FNM_PATH="/home/mahi/.local/share/fnm"

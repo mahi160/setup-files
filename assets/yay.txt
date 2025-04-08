@@ -5,14 +5,13 @@ onefetch
 exa
 fzf 
 htop 
-visual-studio-code-bin 
+visual-studio-code-insiders-bin 
 docker 
 docker-compose 
 duf 
 timeshift 
 timeshift-autosnap 
 gparted 
-youtube-music-bin 
 dconf-editor
 blueman
 bluez-tools
@@ -27,14 +26,6 @@ zen-browser-bin
 ghostty
 gdm-settings
 gnome-shell-pomodoro
+preload
+tlp
 
-# Flatpak
-slack-desktop
-zoom
-zapzap
-obsidian
-obs-studio
-vlc
-gimp
-fragments
-delfin
