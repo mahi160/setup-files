@@ -18,6 +18,8 @@ alias note="~/Documents/Coding/Projects/setup-files/quick-note.sh"
 alias code="code-insiders"
 alias wick="~/Documents/Coding/Projects/setup-files/tmux-wick.sh"
 alias tm="tmux attach -t"
+alias dev="~/Documents/Coding/Projects/setup-files/dev.sh" 
+alias vi="nvim"
 # starship
 eval "$(starship init zsh)"
 # fnm

@@ -1,75 +1,12 @@
-palette = "rose-pine-dawn"
-[palettes.rose-pine-dawn]
-overlay = '#f2e9e1'
-love = '#b4637a'
-gold = '#ea9d34'
-rose = '#d7827e'
-pine = '#286983'
-foam = '#56949f'
-iris = '#907aa9'
-
-[battery]
-full_symbol = '🔋 '
-charging_symbol = '⚡️ '
-discharging_symbol = '💀 '
-
-[[battery.display]] # 'bold red' style and discharging_symbol when capacity is between 0% and 10%
-threshold = 10
-style = 'bold love'
-
-[[battery.display]] # 'bold yellow' style and 💦 symbol when capacity is between 10% and 30%
-threshold = 30
-discharging_symbol = '💦'
-
-[time]
-disabled = true
-format = '🕙[\[ $time \]]($style) '
-time_format = '%T'
-utc_time_offset = '-5'
-time_range = '10:00:00-14:00:00'
-style = 'bold gold'
-
-[sudo]
-style = 'bold foam'
-symbol = '👩‍💻 '
-disabled = true
-
-[hostname]
-ssh_only = true
-format = '@[$ssh_symbol](bold pine) on [$hostname](bold love) '
-trim_at = '.companyname.com'
-disabled = false
-
 [localip]
 ssh_only = false
-format = '[@$localipv4](bold rose) '
+format = "[@$localipv4](italic) "
 disabled = false
 
 [username]
-style_user = 'pine bold'
-style_root = 'rose'
-format = '[$user]($style)'
-disabled = false
 show_always = true
-
-# [git_status]
-# conflicted = '🏳'
-# ahead = '😎 ${count}'
-# behind = '😰 ${count}'
-# diverged = '😵 ⇡${ahead_count}⇣${behind_count}'
-# up_to_date = '✓'
-# untracked = '🤷'
-# stashed = '📦'
-# modified = '📝'
-# staged = '[++\($count\)](green)'
-# renamed = '👅'
-# deleted = '🗑'
-
-[git_status]
-ahead = '[⇡${count}](foam)'
-diverged = '⇕⇡${ahead_count}⇣${behind_count}(pine)'
-behind = '[⇣${count}](love)'
-
+format = "[$user]($style)"
+# Symbols
 [aws]
 symbol = "  "
 
@@ -78,6 +15,9 @@ symbol = " "
 
 [c]
 symbol = " "
+
+[cmake]
+symbol = " "
 
 [conda]
 symbol = " "
@@ -109,6 +49,9 @@ symbol = " "
 [git_branch]
 symbol = " "
 
+[git_commit]
+tag_symbol = '  '
+
 [golang]
 symbol = " "
 
@@ -123,6 +66,9 @@ symbol = " "
 
 [hg_branch]
 symbol = " "
+
+[hostname]
+ssh_symbol = " "
 
 [java]
 symbol = " "
@@ -162,6 +108,7 @@ Amazon = " "
 Android = " "
 Arch = " "
 Artix = " "
+CachyOS = " "
 CentOS = " "
 Debian = " "
 DragonFly = " "
@@ -183,6 +130,7 @@ MidnightBSD = " "
 Mint = " "
 NetBSD = " "
 NixOS = " "
+Nobara = " "
 OpenBSD = "󰈺 "
 openSUSE = " "
 OracleLinux = "󰌷 "
@@ -221,7 +169,7 @@ symbol = "󰟔 "
 symbol = " "
 
 [rust]
-symbol = " "
+symbol = "󱘗 "
 
 [scala]
 symbol = " "
@@ -232,3 +180,5 @@ symbol = " "
 [zig]
 symbol = " "
 
+[gradle]
+symbol = " "
