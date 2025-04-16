@@ -39,9 +39,9 @@ else
   tmux select-pane -t wick:dev.3
 
   # Window 3: lazygit
-  tmux new-window -t wick -n git
-  tmux send-keys -t wick:git 'lazygit' C-m
-  sleep 0.1
+  # tmux new-window -t wick -n git
+  # tmux send-keys -t wick:git 'lazygit' C-m
+  # sleep 0.1
 
   # Select the first window as starting point
   tmux select-window -t wick:editor
