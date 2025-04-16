@@ -1,35 +1,58 @@
-# Gruvbox dark, medium
-tmux_conf_theme_colour_1='#282828'
-tmux_conf_theme_colour_2='#3c3836'
-tmux_conf_theme_colour_3='#ddc7a1'
-tmux_conf_theme_colour_4='#7daea3'
-tmux_conf_theme_colour_5='#d8a657'
-tmux_conf_theme_colour_6='#282828'
-tmux_conf_theme_colour_7='#ddc7a1'
-tmux_conf_theme_colour_8='#282828'
-tmux_conf_theme_colour_9='#a9b665'
-tmux_conf_theme_colour_10='#d3869b'
-tmux_conf_theme_colour_11='#89b482'
-tmux_conf_theme_colour_12='#a89984'
-tmux_conf_theme_colour_13='#ddc7a1'
-tmux_conf_theme_colour_14='#504945'
-tmux_conf_theme_colour_15='#665c54'
-tmux_conf_theme_colour_16='#ea6962'
-tmux_conf_theme_colour_17='#e78a4e'
+set -g status-position bottom
 
-# Statusline
-tmux_conf_theme_left_separator_main='\uE0B0'
-tmux_conf_theme_left_separator_sub='\uE0B1'
-tmux_conf_theme_right_separator_main='\uE0B2'
-tmux_conf_theme_right_separator_sub='\uE0B3'
+# Gruvbox dark, medium
+# tmux_conf_theme_colour_1='#282828'
+# tmux_conf_theme_colour_2='#3c3836'
+# tmux_conf_theme_colour_3='#ddc7a1'
+# tmux_conf_theme_colour_4='#7daea3'
+# tmux_conf_theme_colour_5='#d8a657'
+# tmux_conf_theme_colour_6='#282828'
+# tmux_conf_theme_colour_7='#ddc7a1'
+# tmux_conf_theme_colour_8='#282828'
+# tmux_conf_theme_colour_9='#a9b665'
+# tmux_conf_theme_colour_10='#d3869b'
+# tmux_conf_theme_colour_11='#89b482'
+# tmux_conf_theme_colour_12='#a89984'
+# tmux_conf_theme_colour_13='#ddc7a1'
+# tmux_conf_theme_colour_14='#504945'
+# tmux_conf_theme_colour_15='#665c54'
+# tmux_conf_theme_colour_16='#ea6962'
+# tmux_conf_theme_colour_17='#e78a4e'
+
+# Tokyo night theme
+# tmux_conf_theme_colour_1='#1a1b26'   # Dark background
+# tmux_conf_theme_colour_2='#16161e'   # Slightly lighter bg
+# tmux_conf_theme_colour_3='#c0caf5'   # Foreground (text)
+# tmux_conf_theme_colour_4='#7aa2f7'   # Function / Title
+# tmux_conf_theme_colour_5='#e0af68'   # Yellow / Time
+# tmux_conf_theme_colour_6='#1a1b26'   # Pane border
+# tmux_conf_theme_colour_7='#c0caf5'   # Status bar text
+# tmux_conf_theme_colour_8='#1a1b26'   # Status bar bg
+# tmux_conf_theme_colour_9='#9ece6a'   # Green highlights
+# tmux_conf_theme_colour_10='#bb9af7'  # Purple accents
+# tmux_conf_theme_colour_11='#7dcfff'  # Cyan (optional info)
+# tmux_conf_theme_colour_12='#565f89'  # Comments / muted text
+# tmux_conf_theme_colour_13='#c0caf5'  # Repeating foreground
+# tmux_conf_theme_colour_14='#2a2e36'  # Alt bg (inactive)
+# tmux_conf_theme_colour_15='#3b4261'  # Darker accent border
+# tmux_conf_theme_colour_16='#f7768e'  # Error / Red
+# tmux_conf_theme_colour_17='#ff9e64'  # Orange / Warning
+
 
 # tmux_conf_theme_status_right='#{prefix}#{pairing}#{synchronized} #(curl -m 1 wttr.in/Dhaka?format=3 2>/dev/null; sleep 900) , %R , %d %b | #{username}#{root} | #{hostname} '
-tmux_conf_theme_status_right='#{username}#{root} | #{hostname} '
+# tmux_conf_theme_status_right='#{username}#{root} | #{hostname} '
 
 # TPM
 set -g @plugin 'tmux-plugins/tpm'
 set -g @plugin 'tmux-plugins/tmux-sensible'
 set -g @plugin 'christoomey/tmux-better-pane-resizing'
+set -g @plugin "janoamaral/tokyo-night-tmux"
+set -g @tokyo-night-tmux_show_music 1
+# Statusline
+tmux_conf_theme_left_separator_main='\uE0B0'
+tmux_conf_theme_left_separator_sub='\uE0B1'
+tmux_conf_theme_right_separator_main='\uE0B2'
+tmux_conf_theme_right_separator_sub='\uE0B3'
 
 # Initialize TMUX plugin manager (keep this line at the very bottom of tmux.conf)
 run '~/.config/tmux/plugins/tpm/tpm'
