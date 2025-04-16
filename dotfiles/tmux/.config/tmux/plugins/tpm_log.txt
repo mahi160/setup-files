@@ -1,0 +1,232 @@
+[2025-04-16 09:04:10.616]	List of discovered tpm plugins: tmux-plugins/tpm tmux-plugins/tmux-sensible christoomey/tmux-better-pane-resizing janoamaral/tokyo-night-tmux
+[2025-04-16 09:04:10.635]	Invoking /home/mahi/.config/tmux/plugins/tpm/bin/install_plugins
+[2025-04-16 09:04:10.717]	Installing "tokyo-night-tmux"
+[2025-04-16 09:04:10.729]	Installing "tmux-sensible"
+[2025-04-16 09:04:10.745]	Installing "tmux-better-pane-resizing"
+[2025-04-16 09:04:10.769]	Already installed "tpm"
+[2025-04-16 09:04:11.443]	  "tmux-better-pane-resizing" download fail
+[2025-04-16 09:04:11.863]	  "tmux-sensible" download success
+[2025-04-16 09:04:12.167]	  "tokyo-night-tmux" download success
+[2025-04-16 09:04:12.188]	Done.
+
+[2025-04-16 09:04:41.779]	List of discovered tpm plugins: tmux-plugins/tpm tmux-plugins/tmux-sensible christoomey/tmux-better-pane-resizing janoamaral/tokyo-night-tmux
+[2025-04-16 09:04:41.793]	Invoking /home/mahi/.config/tmux/plugins/tpm/bin/install_plugins
+[2025-04-16 09:04:41.875]	Installing "tmux-better-pane-resizing"
+[2025-04-16 09:04:41.893]	Already installed "tpm"
+[2025-04-16 09:04:41.913]	Already installed "tmux-sensible"
+[2025-04-16 09:04:41.933]	Already installed "tokyo-night-tmux"
+[2025-04-16 09:04:42.587]	  "tmux-better-pane-resizing" download fail
+[2025-04-16 09:04:42.609]	Invoking /home/mahi/.config/tmux/plugins/tpm/bin/update_plugins all
+[2025-04-16 09:04:42.664]	Updating all plugins!
+[2025-04-16 09:04:42.679]	
+[2025-04-16 09:04:43.498]	  "tmux-sensible" update success
+[2025-04-16 09:04:43.517]	    | Already up to date.
+[2025-04-16 09:04:43.541]	  "tokyo-night-tmux" update success
+[2025-04-16 09:04:43.563]	    | Already up to date.
+[2025-04-16 09:04:46.917]	  "tpm" update success
+[2025-04-16 09:04:46.936]	    | Already up to date.
+[2025-04-16 09:04:46.946]	    | Submodule 'lib/tmux-test' (https://github.com/tmux-plugins/tmux-test.git) registered for path 'lib/tmux-test'
+[2025-04-16 09:04:46.957]	    | Cloning into '/home/mahi/Documents/Coding/Projects/setup-files/dotfiles/tmux/.config/tmux/plugins/tpm/lib/tmux-test'...
+[2025-04-16 09:04:46.978]	    | From https://github.com/tmux-plugins/tmux-test
+[2025-04-16 09:04:47.003]	    |  * branch            33fa65fbfb72ba6dd106c21bf5ee6cc353ecdbb6 -> FETCH_HEAD
+[2025-04-16 09:04:47.026]	    | Submodule path 'lib/tmux-test': checked out '33fa65fbfb72ba6dd106c21bf5ee6cc353ecdbb6'
+[2025-04-16 09:04:47.042]	Invoking /home/mahi/.config/tmux/plugins/tpm/bin/clean_plugins all
+[2025-04-16 09:04:47.109]	Done.
+
+[2025-04-16 09:04:49.466]	List of discovered tpm plugins: tmux-plugins/tpm tmux-plugins/tmux-sensible christoomey/tmux-better-pane-resizing janoamaral/tokyo-night-tmux
+[2025-04-16 09:04:49.489]	Invoking /home/mahi/.config/tmux/plugins/tpm/bin/install_plugins
+[2025-04-16 09:04:49.573]	Installing "tmux-better-pane-resizing"
+[2025-04-16 09:04:49.583]	Already installed "tpm"
+[2025-04-16 09:04:49.598]	Already installed "tmux-sensible"
+[2025-04-16 09:04:49.617]	Already installed "tokyo-night-tmux"
+[2025-04-16 09:04:50.329]	  "tmux-better-pane-resizing" download fail
+[2025-04-16 09:04:50.351]	Invoking /home/mahi/.config/tmux/plugins/tpm/bin/update_plugins all
+[2025-04-16 09:04:50.405]	Updating all plugins!
+[2025-04-16 09:04:50.426]	
+[2025-04-16 09:04:51.248]	  "tmux-sensible" update success
+[2025-04-16 09:04:51.263]	    | Already up to date.
+[2025-04-16 09:04:51.282]	  "tpm" update success
+[2025-04-16 09:04:51.305]	    | Already up to date.
+[2025-04-16 09:04:51.318]	  "tokyo-night-tmux" update success
+[2025-04-16 09:04:51.332]	    | Already up to date.
+[2025-04-16 09:04:51.354]	Invoking /home/mahi/.config/tmux/plugins/tpm/bin/clean_plugins all
+[2025-04-16 09:04:51.440]	Done.
+
+[2025-04-16 09:05:16.022]	List of discovered tpm plugins: tmux-plugins/tpm tmux-plugins/tmux-sensible christoomey/tmux-better-pane-resizing
+[2025-04-16 09:05:16.038]	Invoking /home/mahi/.config/tmux/plugins/tpm/bin/install_plugins
+[2025-04-16 09:05:16.124]	Installing "tmux-better-pane-resizing"
+[2025-04-16 09:05:16.145]	Already installed "tpm"
+[2025-04-16 09:05:16.163]	Already installed "tmux-sensible"
+[2025-04-16 09:05:16.833]	  "tmux-better-pane-resizing" download fail
+[2025-04-16 09:05:16.849]	Invoking /home/mahi/.config/tmux/plugins/tpm/bin/update_plugins all
+[2025-04-16 09:05:16.900]	Updating all plugins!
+[2025-04-16 09:05:16.909]	
+[2025-04-16 09:05:17.752]	  "tmux-sensible" update success
+[2025-04-16 09:05:17.768]	    | Already up to date.
+[2025-04-16 09:05:17.782]	  "tpm" update success
+[2025-04-16 09:05:17.791]	    | Already up to date.
+[2025-04-16 09:05:17.808]	Invoking /home/mahi/.config/tmux/plugins/tpm/bin/clean_plugins all
+[2025-04-16 09:05:17.895]	Removing "tokyo-night-tmux"
+[2025-04-16 09:05:17.908]	  "tokyo-night-tmux" clean success
+[2025-04-16 09:05:17.922]	Done.
+
+[2025-04-16 09:07:20.024]	List of discovered tpm plugins: tmux-plugins/tpm tmux-plugins/tmux-sensible christoomey/tmux-better-pane-resizing
+[2025-04-16 09:07:20.045]	Invoking /home/mahi/.config/tmux/plugins/tpm/bin/install_plugins
+[2025-04-16 09:07:20.128]	Installing "tmux-better-pane-resizing"
+[2025-04-16 09:07:20.148]	Already installed "tpm"
+[2025-04-16 09:07:20.169]	Already installed "tmux-sensible"
+[2025-04-16 09:07:20.830]	  "tmux-better-pane-resizing" download fail
+[2025-04-16 09:07:20.855]	Invoking /home/mahi/.config/tmux/plugins/tpm/bin/update_plugins all
+[2025-04-16 09:07:20.897]	Updating all plugins!
+[2025-04-16 09:07:20.907]	
+[2025-04-16 09:07:21.770]	  "tmux-sensible" update success
+[2025-04-16 09:07:21.789]	    | Already up to date.
+[2025-04-16 09:07:21.804]	  "tpm" update success
+[2025-04-16 09:07:21.819]	    | Already up to date.
+[2025-04-16 09:07:21.837]	Invoking /home/mahi/.config/tmux/plugins/tpm/bin/clean_plugins all
+[2025-04-16 09:07:21.921]	Done.
+
+[2025-04-16 09:09:09.084]	List of discovered tpm plugins: tmux-plugins/tpm tmux-plugins/tmux-sensible christoomey/tmux-better-pane-resizing
+[2025-04-16 09:09:09.096]	Invoking /home/mahi/.config/tmux/plugins/tpm/bin/install_plugins
+[2025-04-16 09:09:09.170]	Installing "tmux-better-pane-resizing"
+[2025-04-16 09:09:09.184]	Already installed "tpm"
+[2025-04-16 09:09:09.195]	Already installed "tmux-sensible"
+[2025-04-16 09:09:09.880]	  "tmux-better-pane-resizing" download fail
+[2025-04-16 09:09:09.893]	Invoking /home/mahi/.config/tmux/plugins/tpm/bin/update_plugins all
+[2025-04-16 09:09:09.929]	Updating all plugins!
+[2025-04-16 09:09:09.940]	
+[2025-04-16 09:09:10.744]	  "tpm" update success
+[2025-04-16 09:09:10.758]	    | Already up to date.
+[2025-04-16 09:09:10.773]	  "tmux-sensible" update success
+[2025-04-16 09:09:10.793]	    | Already up to date.
+[2025-04-16 09:09:10.816]	Invoking /home/mahi/.config/tmux/plugins/tpm/bin/clean_plugins all
+[2025-04-16 09:09:10.898]	Done.
+
+[2025-04-16 09:10:36.108]	List of discovered tpm plugins: tmux-plugins/tpm tmux-plugins/tmux-sensible christoomey/tmux-better-pane-resizing
+[2025-04-16 09:10:36.126]	Invoking /home/mahi/.config/tmux/plugins/tpm/bin/install_plugins
+[2025-04-16 09:10:36.211]	Installing "tmux-better-pane-resizing"
+[2025-04-16 09:10:36.224]	Already installed "tmux-sensible"
+[2025-04-16 09:10:36.235]	Already installed "tpm"
+[2025-04-16 09:10:36.919]	  "tmux-better-pane-resizing" download fail
+[2025-04-16 09:10:36.934]	Invoking /home/mahi/.config/tmux/plugins/tpm/bin/update_plugins all
+[2025-04-16 09:10:36.987]	Updating all plugins!
+[2025-04-16 09:10:37.006]	
+[2025-04-16 09:10:37.816]	  "tpm" update success
+[2025-04-16 09:10:37.833]	    | Already up to date.
+[2025-04-16 09:10:37.853]	  "tmux-sensible" update success
+[2025-04-16 09:10:37.862]	    | Already up to date.
+[2025-04-16 09:10:37.876]	Invoking /home/mahi/.config/tmux/plugins/tpm/bin/clean_plugins all
+[2025-04-16 09:10:37.954]	Done.
+
+[2025-04-16 09:11:01.081]	List of discovered tpm plugins: tmux-plugins/tpm tmux-plugins/tmux-sensible christoomey/tmux-better-pane-resizing
+[2025-04-16 09:11:01.094]	Invoking /home/mahi/.config/tmux/plugins/tpm/bin/install_plugins
+[2025-04-16 09:11:01.176]	Installing "tmux-better-pane-resizing"
+[2025-04-16 09:11:01.211]	Already installed "tpm"
+[2025-04-16 09:11:01.230]	Already installed "tmux-sensible"
+[2025-04-16 09:11:01.883]	  "tmux-better-pane-resizing" download fail
+[2025-04-16 09:11:01.903]	Invoking /home/mahi/.config/tmux/plugins/tpm/bin/update_plugins all
+[2025-04-16 09:11:01.956]	Updating all plugins!
+[2025-04-16 09:11:01.974]	
+[2025-04-16 09:11:02.796]	  "tpm" update success
+[2025-04-16 09:11:02.806]	    | Already up to date.
+[2025-04-16 09:11:02.820]	  "tmux-sensible" update success
+[2025-04-16 09:11:02.839]	    | Already up to date.
+[2025-04-16 09:11:02.859]	Invoking /home/mahi/.config/tmux/plugins/tpm/bin/clean_plugins all
+[2025-04-16 09:11:02.938]	Done.
+
+[2025-04-16 09:11:47.572]	List of discovered tpm plugins: tmux-plugins/tpm tmux-plugins/tmux-sensible christoomey/tmux-better-pane-resizing
+[2025-04-16 09:11:47.588]	Invoking /home/mahi/.config/tmux/plugins/tpm/bin/install_plugins
+[2025-04-16 09:11:47.664]	Installing "tmux-better-pane-resizing"
+[2025-04-16 09:11:47.684]	Already installed "tmux-sensible"
+[2025-04-16 09:11:47.699]	Already installed "tpm"
+[2025-04-16 09:11:48.385]	  "tmux-better-pane-resizing" download fail
+[2025-04-16 09:11:48.397]	Invoking /home/mahi/.config/tmux/plugins/tpm/bin/update_plugins all
+[2025-04-16 09:11:48.443]	Updating all plugins!
+[2025-04-16 09:11:48.463]	
+[2025-04-16 09:11:49.267]	  "tmux-sensible" update success
+[2025-04-16 09:11:49.286]	    | Already up to date.
+[2025-04-16 09:11:49.308]	  "tpm" update success
+[2025-04-16 09:11:49.322]	    | Already up to date.
+[2025-04-16 09:11:49.333]	Invoking /home/mahi/.config/tmux/plugins/tpm/bin/clean_plugins all
+[2025-04-16 09:11:49.409]	Done.
+
+[2025-04-16 09:12:56.754]	List of discovered tpm plugins: tmux-plugins/tpm tmux-plugins/tmux-sensible christoomey/tmux-better-pane-resizing
+[2025-04-16 09:12:56.765]	Invoking /home/mahi/.config/tmux/plugins/tpm/bin/install_plugins
+[2025-04-16 09:12:56.846]	Installing "tmux-better-pane-resizing"
+[2025-04-16 09:12:56.870]	Already installed "tpm"
+[2025-04-16 09:12:56.887]	Already installed "tmux-sensible"
+[2025-04-16 09:12:57.561]	  "tmux-better-pane-resizing" download fail
+[2025-04-16 09:12:57.583]	Invoking /home/mahi/.config/tmux/plugins/tpm/bin/update_plugins all
+[2025-04-16 09:12:57.639]	Updating all plugins!
+[2025-04-16 09:12:57.660]	
+[2025-04-16 09:12:58.456]	  "tpm" update success
+[2025-04-16 09:12:58.470]	    | Already up to date.
+[2025-04-16 09:12:58.491]	  "tmux-sensible" update success
+[2025-04-16 09:12:58.511]	    | Already up to date.
+[2025-04-16 09:12:58.526]	Invoking /home/mahi/.config/tmux/plugins/tpm/bin/clean_plugins all
+[2025-04-16 09:12:58.604]	Done.
+
+[2025-04-16 09:14:37.054]	List of discovered tpm plugins: tmux-plugins/tpm tmux-plugins/tmux-sensible christoomey/tmux-better-pane-resizing
+[2025-04-16 09:14:37.079]	Invoking /home/mahi/.config/tmux/plugins/tpm/bin/install_plugins
+[2025-04-16 09:14:37.166]	Installing "tmux-better-pane-resizing"
+[2025-04-16 09:14:37.179]	Already installed "tpm"
+[2025-04-16 09:14:37.192]	Already installed "tmux-sensible"
+[2025-04-16 09:14:37.872]	  "tmux-better-pane-resizing" download fail
+[2025-04-16 09:14:37.884]	Invoking /home/mahi/.config/tmux/plugins/tpm/bin/update_plugins all
+[2025-04-16 09:14:37.929]	Updating all plugins!
+[2025-04-16 09:14:37.944]	
+[2025-04-16 09:14:38.784]	  "tpm" update success
+[2025-04-16 09:14:38.805]	    | Already up to date.
+[2025-04-16 09:14:38.819]	  "tmux-sensible" update success
+[2025-04-16 09:14:38.834]	    | Already up to date.
+[2025-04-16 09:14:38.857]	Invoking /home/mahi/.config/tmux/plugins/tpm/bin/clean_plugins all
+[2025-04-16 09:14:38.941]	Done.
+
+[2025-04-16 09:14:51.930]	List of discovered tpm plugins: tmux-plugins/tpm tmux-plugins/tmux-sensible christoomey/tmux-better-pane-resizing
+[2025-04-16 09:14:51.941]	Invoking /home/mahi/.config/tmux/plugins/tpm/bin/install_plugins
+[2025-04-16 09:14:51.989]	Installing "tmux-better-pane-resizing"
+[2025-04-16 09:14:51.999]	Already installed "tpm"
+[2025-04-16 09:14:52.009]	Already installed "tmux-sensible"
+[2025-04-16 09:14:52.730]	  "tmux-better-pane-resizing" download fail
+[2025-04-16 09:14:52.752]	Invoking /home/mahi/.config/tmux/plugins/tpm/bin/update_plugins all
+[2025-04-16 09:14:52.811]	Updating all plugins!
+[2025-04-16 09:14:52.835]	
+[2025-04-16 09:14:53.648]	  "tpm" update success
+[2025-04-16 09:14:53.666]	    | Already up to date.
+[2025-04-16 09:14:53.689]	  "tmux-sensible" update success
+[2025-04-16 09:14:53.712]	    | Already up to date.
+[2025-04-16 09:14:53.733]	Invoking /home/mahi/.config/tmux/plugins/tpm/bin/clean_plugins all
+[2025-04-16 09:14:53.826]	Done.
+
+[2025-04-16 10:05:56.698]	List of discovered tpm plugins: tmux-plugins/tpm tmux-plugins/tmux-sensible christoomey/tmux-better-pane-resizing
+[2025-04-16 10:05:56.708]	Invoking /home/mahi/.config/tmux/plugins//tpm/bin/install_plugins
+[2025-04-16 10:05:56.759]	Installing "tmux-better-pane-resizing"
+[2025-04-16 10:05:56.776]	Already installed "tpm"
+[2025-04-16 10:05:56.788]	Already installed "tmux-sensible"
+[2025-04-16 10:05:57.456]	  "tmux-better-pane-resizing" download fail
+[2025-04-16 10:05:57.482]	Invoking /home/mahi/.config/tmux/plugins//tpm/bin/update_plugins all
+[2025-04-16 10:05:57.522]	Updating all plugins!
+[2025-04-16 10:05:57.543]	
+[2025-04-16 10:05:58.317]	  "tmux-sensible" update success
+[2025-04-16 10:05:58.331]	    | Already up to date.
+[2025-04-16 10:05:58.348]	  "tpm" update success
+[2025-04-16 10:05:58.367]	    | Already up to date.
+[2025-04-16 10:05:58.382]	Invoking /home/mahi/.config/tmux/plugins//tpm/bin/clean_plugins all
+[2025-04-16 10:05:58.444]	Done.
+
+[2025-04-16 13:58:34.579]	List of discovered tpm plugins: tmux-plugins/tpm tmux-plugins/tmux-sensible christoomey/tmux-better-pane-resizing
+[2025-04-16 13:58:34.608]	Invoking /home/mahi/.config/tmux/plugins//tpm/bin/install_plugins
+[2025-04-16 13:58:34.712]	Installing "tmux-better-pane-resizing"
+[2025-04-16 13:58:34.737]	Already installed "tmux-sensible"
+[2025-04-16 13:58:34.763]	Already installed "tpm"
+[2025-04-16 13:58:35.484]	  "tmux-better-pane-resizing" download fail
+[2025-04-16 13:58:35.526]	Invoking /home/mahi/.config/tmux/plugins//tpm/bin/update_plugins all
+[2025-04-16 13:58:35.583]	Updating all plugins!
+[2025-04-16 13:58:35.608]	
+[2025-04-16 13:58:36.492]	  "tmux-sensible" update success
+[2025-04-16 13:58:36.518]	    | Already up to date.
+[2025-04-16 13:58:36.538]	  "tpm" update success
+[2025-04-16 13:58:36.559]	    | Already up to date.
+[2025-04-16 13:58:36.589]	Invoking /home/mahi/.config/tmux/plugins//tpm/bin/clean_plugins all
+[2025-04-16 13:58:36.680]	Done.
+
