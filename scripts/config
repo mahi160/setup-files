@@ -1,0 +1,8 @@
+theme = "tokyonight"
+window-height = 24
+window-width = 80
+window-padding-x = 0
+window-padding-balance = true
+background-blur = true
+background-opacity = 0.90
+gtk-titlebar-hide-when-maximized = true

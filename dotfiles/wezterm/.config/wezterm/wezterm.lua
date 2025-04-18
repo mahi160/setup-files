@@ -11,21 +11,21 @@ config.line_height = 1.2
 -- Remove window decorations and start fullscreen
 config.window_decorations = "NONE"
 config.window_background_opacity = 0.97
-config.initial_rows = 60
-config.initial_cols = 160
-config.enable_scroll_bar = false
-config.window_padding = {
-	left = 0,
-	right = 0,
-	top = 0,
-	bottom = 0,
-}
-
+-- config.initial_rows = 60
+-- config.initial_cols = 160
+-- config.enable_scroll_bar = false
+-- config.window_padding = {
+-- 	left = 0,
+-- 	right = 0,
+-- 	top = 0,
+-- 	bottom = 0,
+-- }
+--
 -- Fullscreen on startup
-wezterm.on("gui-startup", function()
-	local tab, pane, window = wezterm.mux.spawn_window()
-	window:gui_window():maximize()
-end)
+-- wezterm.on("gui-startup", function(cmd)
+-- 	local tab, pane, window = wezterm.mux.spawn_window(cmd or {})
+-- 	window:gui_window():maximize()
+-- end)
 
 -- Tab bar
 config.use_fancy_tab_bar = false

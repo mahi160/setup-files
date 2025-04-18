@@ -10,9 +10,9 @@ if [ ! -d "$TARGET_DIR" ]; then
 fi
 
 # Start WezTerm with a shell, holding the terminal open
-if [ "$WEZTERM" != "true" ]; then
-  export WEZTERM=true
-  exec wezterm -e "$0" "$@" &
+if [ "$KITTY" != "true" ]; then
+  export KITTY=true
+  exec kitty -e "$0" "$@" &
   exit 0
 fi
 # Change to the specified directory

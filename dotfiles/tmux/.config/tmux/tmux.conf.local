@@ -23,14 +23,14 @@ bind-key K kill-session
 
 
 # tmux_conf_theme_status_right='#{prefix}#{pairing}#{synchronized} #(curl -m 1 wttr.in/Dhaka?format=3 2>/dev/null; sleep 900) , %R , %d %b | #{username}#{root} | #{hostname} '
-# tmux_conf_theme_status_right='#{username}#{root} | #{hostname} '
+tmux_conf_theme_status_right='#{username}#{root} | #{hostname} '
 
 # TPM
 set -g @plugin 'tmux-plugins/tpm'
 set -g @plugin 'tmux-plugins/tmux-sensible'
 set -g @plugin 'christoomey/tmux-better-pane-resizing'
-set -g @plugin "janoamaral/tokyo-night-tmux"
-set -g @tokyo-night-tmux_show_music 1
+# set -g @plugin "janoamaral/tokyo-night-tmux"
+# set -g @tokyo-night-tmux_show_music 1
 # Statusline
 tmux_conf_theme_left_separator_main='\uE0B0'
 tmux_conf_theme_left_separator_sub='\uE0B1'

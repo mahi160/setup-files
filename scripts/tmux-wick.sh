@@ -1,7 +1,7 @@
 #!/bin/bash
-if [ "$WEZTERM" != "true" ]; then
-  export WEZTERM=true
-  exec wezterm -e "$0" "$@" &
+if [ "$KITTY" != "true" ]; then
+  export KITTY=true
+  exec kitty -e "$0" "$@" &
   exit 0
 fi
 # Set your work directory here
