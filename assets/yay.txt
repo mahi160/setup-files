@@ -1,11 +1,8 @@
-﻿
-libreoffice-fresh 
+﻿libreoffice-fresh 
 fastfetch 
 onefetch 
 exa
 fzf 
-htop 
-visual-studio-code-insiders-bin 
 docker 
 docker-compose 
 duf 
@@ -19,7 +16,6 @@ bluez-utils
 neovim
 tailscale
 flameshot
-openbangla-keyboard
 forticlient-vpn
 brave-bin
 zen-browser-bin
@@ -27,5 +23,6 @@ ghostty
 gdm-settings
 gnome-shell-pomodoro
 preload
-tlp
-
+kitty
+lazygit
+tmux

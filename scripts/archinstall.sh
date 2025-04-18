@@ -1,7 +1,7 @@
 #!/bin/bash
 
 # Configuration
-LOG_FILE="/var/log/setup.log"
+LOG_FILE="./setup.log"
 SMBPASS="${2:-}"
 DOTFILES_DIR="dotfiles"
 ASSETS_DIR="assets"
@@ -75,7 +75,8 @@ setup_terminal() {
   check_command starship || curl -sS https://starship.rs/install.sh | sh -s -- -y
 
   # Setup dotfiles
-  stow -d "$DOTFILES_DIR" -t ~ zsh starship tmux alacritty nvim ghostty 2>/dev/null
+  rm -rf ~/.config/nvim ~/.zshrc ~/.config/starship ~/.config/tmux ~/.config/kitty ~/.config/ghostty
+  stow -d "$DOTFILES_DIR" -t ~ zsh starship tmux kitty nvim ghostty wezterm
   notify "Terminal setup complete"
 }
 
@@ -144,26 +145,21 @@ setup_gnome() {
     exit 1
   }
 
-  local settings=(
-    "org.gnome.desktop.interface document-font-name 'Noto Sans Regular 11'"
-    "org.gnome.desktop.interface font-name 'Noto Sans Regular 11'"
-    "org.gnome.desktop.interface monospace-font-name 'JetbrainsMono Nerd Font Regular 11'"
-    "org.gnome.desktop.interface show-battery-percentage true"
-    "org.gnome.desktop.sound theme-name 'Click'"
-    "org.gnome.shell.app-switcher current-workspace-only true"
-    "org.gnome.desktop.interface accent-color 'green'"
-    "org.gnome.desktop.interface clock-show-seconds true"
-    "org.gnome.desktop.interface icon-theme 'Papirus'"
-    "org.gnome.desktop.interface gtk-theme 'adw-gtk3'"
-    "org.gnome.desktop.background picture-uri 'file:///$HOME/.local/share/backgrounds/gnome/Lakeside-timed.xml'"
-    "org.gnome.desktop.background picture-options 'zoom'"
-    "org.gnome.desktop.peripherals.touchpad natural-scroll false"
-    "org.gnome.desktop.wm.preferences button-layout 'close:appmenu'"
-  )
+  gsettings set org.gnome.desktop.interface document-font-name 'Noto Sans Regular 11'
+  gsettings set org.gnome.desktop.interface font-name 'Noto Sans Regular 11'
+  gsettings set org.gnome.desktop.interface monospace-font-name 'JetbrainsMono Nerd Font Regular 11'
+  gsettings set org.gnome.desktop.interface show-battery-percentage true
+  gsettings set org.gnome.desktop.sound theme-name 'Click'
+  gsettings set org.gnome.shell.app-switcher current-workspace-only true
+  gsettings set org.gnome.desktop.interface accent-color 'green'
+  gsettings set org.gnome.desktop.interface clock-show-seconds true
+  gsettings set org.gnome.desktop.interface icon-theme 'Papirus'
+  gsettings set org.gnome.desktop.interface gtk-theme 'adw-gtk3'
+  gsettings set org.gnome.desktop.background picture-uri 'file:///$HOME/.local/share/backgrounds/gnome/Lakeside-timed.xml'
+  gsettings set org.gnome.desktop.background picture-options 'zoom'
+  gsettings set org.gnome.desktop.peripherals.touchpad natural-scroll false
+  gsettings set org.gnome.desktop.wm.preferences button-layout 'close:appmenu'
 
-  for setting in "${settings[@]}"; do
-    gsettings set "$setting"
-  done
   notify "GNOME configuration complete"
 }
 

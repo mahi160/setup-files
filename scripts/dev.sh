@@ -22,4 +22,3 @@ tmux send-keys 'nvim .' C-m
 
 # Attach to the new tmux session
 tmux attach-session
-
