@@ -1,7 +1,6 @@
 # Add deno completions to search path
 if [[ ":$FPATH:" != *":/home/mahi/.zsh/completions:"* ]]; then export FPATH="/home/mahi/.zsh/completions:$FPATH"; fi
 export ZSH="$HOME/.oh-my-zsh"
-
 # Plugins
 DISABLE_UNTRACKED_FILES_DIRTY="true"
 plugins=(git z zsh-autosuggestions zsh-syntax-highlighting)
@@ -9,18 +8,23 @@ fpath+=${ZSH_CUSTOM:-${ZSH:-~/.oh-my-zsh}/custom}/plugins/zsh-completions/src
 source $ZSH/oh-my-zsh.sh
 
 # aliases
-alias zc="vi ~/.zshrc"
+alias zc="nvim ~/.zshrc"
 alias zs="source ~/.zshrc"
-alias tc="vi ~/.config/tmux/tmux.conf.local"
 alias ls="exa"
 alias ll="exa -la"
-alias setup="vi ~/Documents/Coding/Projects/setup-files/"
-alias note="~/Documents/Coding/Projects/setup-files/scripts/quick-note.sh"
-alias wick="~/Documents/Coding/Projects/setup-files/scripts/tmux-wick.sh"
-alias vi="~/Documents/Coding/Projects/setup-files/scripts/vi.sh"
-
+# alias ac="nvim ~/.config/alacritty/alacritty.toml"
+alias setup="nvim ~/Documents/Coding/Projects/setup-files/"
+alias note="~/Documents/Coding/Projects/setup-files/quick-note.sh"
+alias code="code-insiders"
+alias wick="~/Documents/Coding/Projects/setup-files/tmux-wick.sh"
+alias tm="tmux attach -t"
+alias dev="~/Documents/Coding/Projects/setup-files/dev.sh" 
+alias vi="nvim"
 # starship
 eval "$(starship init zsh)"
+# fnm
+export PATH="/home/mahi/.local/share/fnm:$PATH"
+eval "$(fnm env)"
 
 # fzf search
 source <(fzf --zsh)
@@ -47,6 +51,12 @@ esac
 # pnpm end
 export PATH=$HOME/.local/bin:$PATH
 
+# fnm
+FNM_PATH="/home/mahi/.fnm"
+if [ -d "$FNM_PATH" ]; then
+  export PATH="/home/mahi/.fnm:$PATH"
+  eval "$(fnm env)"
+fi
 # android studio
 export ANDROID_HOME=$HOME/Android/sdk
 export PATH=$PATH:$ANDROID_HOME/emulator
@@ -55,6 +65,34 @@ export PATH=$PATH:$ANDROID_HOME/platform-tools
 # Initialize zsh completions (added by deno install script)
 autoload -Uz compinit
 compinit
+
+# fnm
+FNM_PATH="/home/mahi/.local/share/fnm"
+if [ -d "$FNM_PATH" ]; then
+  export PATH="/home/mahi/.local/share/fnm:$PATH"
+  eval "`fnm env`"
+fi
+
+# fnm
+FNM_PATH="/home/mahi/.local/share/fnm"
+if [ -d "$FNM_PATH" ]; then
+  export PATH="/home/mahi/.local/share/fnm:$PATH"
+  eval "`fnm env`"
+fi
+
+# fnm
+FNM_PATH="/home/mahi/.local/share/fnm"
+if [ -d "$FNM_PATH" ]; then
+  export PATH="/home/mahi/.local/share/fnm:$PATH"
+  eval "`fnm env`"
+fi
+
+# fnm
+FNM_PATH="/home/mahi/.local/share/fnm"
+if [ -d "$FNM_PATH" ]; then
+  export PATH="/home/mahi/.local/share/fnm:$PATH"
+  eval "`fnm env`"
+fi
 
 # fnm
 FNM_PATH="/home/mahi/.local/share/fnm"

@@ -1,25 +1,18 @@
 #!/bin/bash
 
-# Get the directory passed as an argument or use the current directory
-TARGET_DIR="${1:-$(pwd)}"
+# Get current directory name for session
+SESSION_NAME=$(basename "$PWD")
 
-# Ensure the directory exists
-if [ ! -d "$TARGET_DIR" ]; then
-  echo "Directory $TARGET_DIR does not exist. Exiting."
-  exit 1
+# Check if tmux session exists
+tmux has-session -t "$SESSION_NAME" 2>/dev/null
+
+if [ $? != 0 ]; then
+	# Session doesn't exist, create new session and open nvim
+	wezterm start -- tmux new-session -s "$SESSION_NAME" -c "$PWD" nvim &
+else
+	# Session exists, attach to it
+	wezterm start -- tmux attach-session -t "$SESSION_NAME" &
 fi
 
-# Start WezTerm with a shell, holding the terminal open
-if [ "$KITTY" != "true" ]; then
-  export KITTY=true
-  exec kitty -e "$0" "$@" &
-  exit 0
-fi
-# Change to the specified directory
-cd "$TARGET_DIR" &&
-
-  # Start tmux and run nvim in the first pane
-  tmux new-session -d 'nvim .' &&
-
-  # Attach to the tmux session
-  tmux attach
+# Exit the current terminal
+exit

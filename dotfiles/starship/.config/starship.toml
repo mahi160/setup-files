@@ -6,7 +6,6 @@ disabled = false
 [username]
 show_always = true
 format = "[$user]($style)"
-
 # Symbols
 [aws]
 symbol = "  "
